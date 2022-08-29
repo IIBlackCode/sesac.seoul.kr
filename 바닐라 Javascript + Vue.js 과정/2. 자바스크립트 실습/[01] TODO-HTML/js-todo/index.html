@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Todo List</title>
+    <-- 해당 링크에 나오는 CDN 코드 -->
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+    <!-- 영상에 나오는 CDN 코드 -->
+    <link href="https://fonts.googleapis.com/css2?family=Material+Icons" rel="stylesheet" />
+</head>
+<body>
+    <div class="wapper">
+        <header>
+            <h1>Todo List</h1>
+        </header>
+        <section>
+            <div class="input-container">
+                <input type="text" class="input-text">
+                <button class="add-button">추가</button>
+                <div class="list-container">
+                    <ul class="list">
+                        <!-- 해당 링크에서 받아온 CDN방식 -->
+                        <li>
+                            <span class="material-symbols-outlined">
+                                favorite
+                            </span>
+                            <span class="like">
+                                <i class="material-icons">favorite_border</i>
+                            </span>
+                            <span class="item">Javascript Todo</span>
+                            <span class="manage">
+                                <span class="material-symbols-outlined">done</span>
+                                <span class="material-symbols-outlined">clear</span>
+                            </span>
+                        </li>
+                        
+                        <!-- 영상에서 참고한 링크에서 받아온 CDN방식 -->
+                        <li>
+                            <span class="like">
+                                <i class="material-icons favorite">favorite_border</i>
+                            </span>
+                            <span class="item">Javascript Todo</span>
+                            <span class="manage">
+                                <span class="material-icons check">done</span>
+                                <span class="material-icons clear">clear</span>
+                            </span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+    </div>
+</body>
+</html>
