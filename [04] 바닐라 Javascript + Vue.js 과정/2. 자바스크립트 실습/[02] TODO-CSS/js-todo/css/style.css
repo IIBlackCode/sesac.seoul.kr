@@ -1,0 +1,98 @@
+* {
+    margin: 0;
+    padding: 0;
+    outline: none;
+}
+
+.wapper {
+    height: 100vh;
+    width:  100%;
+    
+    /* 가로 정렬 */
+    display: flex;
+
+    /* 세로 정렬 */
+    flex-direction: column;
+}
+
+header {
+    color: #fff;
+    background: linear-gradient(15deg,#C6FFDD,#f7797d);
+    padding: 1em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.input-container {
+    width: 100%;
+    height: 30px;
+    display: flex;
+    border-bottom: 1px solid #ccc;
+}
+
+.input-text {
+    width: 90%;
+    padding: 0.3em;
+    border: none;
+}
+
+.add-button {
+    width: 10%;
+    border: none;
+    background: hsl(344, 67%, 52%);
+    color: #fff;
+    outline: none;
+}
+.add-button:hover {
+    cursor: pointer;
+    background-color: #333;
+}
+
+.list {
+    list-style: none;
+}
+
+.list li {
+    display: flex;
+    border-bottom:  1px solid #ccc;
+    padding: 1em;
+    align-items: center;
+}
+
+
+.like {
+    flex: 1;
+}
+
+.item {
+    flex: 8
+}
+
+.manage {
+    flex: 1;
+    display: flex;
+    justify-content: space-between;
+}
+
+.like i {
+    color: salmon;
+}
+
+.check {
+    color: #38ef7d;
+}
+
+.clear {
+    color: salmon;
+}
+
+/* 완료가 됐을 때 체크 */
+.done .item {
+    text-decoration: line-through;
+}
+
+/*  */
+.done .check {
+    visibility: hidden;
+}
